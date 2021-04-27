@@ -5,5 +5,5 @@ Because `append` is a *variadic* function you have to add the three dots in the 
 ```golang
 append([]int{1,2}, []int{3,4}) // doesn't work. Will return "cannot use []int literal (type []int) as type int in append"
 
-append([]int{1,2}, []int{3,4}) // Works!
+append([]int{1,2}, []int{3,4}...) // Works!
 ```
